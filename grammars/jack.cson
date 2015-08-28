@@ -4,19 +4,15 @@
 'name': 'Jack'
 'patterns': [
   {
-    'match': '\\b(class|int|char|boolean|void)\\b'
-    'name': 'storage.type.jack'
-  }
-  {
-    'match': '\\b(constructor|function|method)\\b'
+    'match': '\\b(int|char|boolean|void)\\b'
     'name': 'storage.modifier.jack'
   }
   {
-    'match': '\\b(field|static|var)\\b'
-    'name': 'storage.modifier.jack'
+    'match': '\\b(constructor|function|method|class)\\b'
+    'name': 'keyword.control.jack'
   }
   {
-    'match': '\\b(let|if|else|while|do|return)\\b'
+    'match': '\\b(let|if|else|while|do|return|var|field|static)\\b'
     'name': 'keyword.control.jack'
   }
   {
@@ -61,8 +57,8 @@
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.comment.jack'
-      'end': '\\n'
-      'name': 'comment.line.double-slash.jack'
+    'end': '\\n'
+    'name': 'comment.line.double-slash.jack'
   }
 ]
 'scopeName': 'source.jack'
